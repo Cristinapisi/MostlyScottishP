@@ -149,9 +149,9 @@ def populate_divisions_from(files_location, startdate, enddate):
 def main():
     Division.objects.all().delete()
     Vote.objects.all().delete()
-    print "_deleted_old_divisions_and_votes_"
+    print("_deleted_old_divisions_and_votes_")
     populate_divisions_from(divisions_location, startdate, enddate)
-    print "_read_new_divisions_and_votes_"
+    print("_read_new_divisions_and_votes_")
 
 
 if __name__ == '__main__':

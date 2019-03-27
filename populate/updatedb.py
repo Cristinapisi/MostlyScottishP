@@ -12,43 +12,43 @@ def main():
     """
     dt = datetime.now()
     populate_data_parties()
-    print "_parties_info_"
+    print("_parties_info_")
 
     get_parties_colors_csv()
-    print "_get_parties_colors_csv_"
+    print("_get_parties_colors_csv_")
 
     compute_rebellious_votes()
-    print "_rebelious_votes_"
+    print("_rebelious_votes_")
 
     compute_division_turnout()
-    print "_division_turnout_"
+    print("_division_turnout_")
 
     compute_msp_turnout()
-    print "_msp_turnout_"
+    print("_msp_turnout_")
 
     compute_division_rebels()
-    print "_division_rebels_"
+    print("_division_rebels_")
 
     compute_msp_rebellions()
-    print "_msp_rebellions_"
+    print("_msp_rebellions_")
 
     compute_type_for_divisions()
-    print "_type_for_divisions_"
+    print("_type_for_divisions_")
 
     compute_parents_for_divisions()
-    print "_parents_for_divisions_"
+    print("_parents_for_divisions_")
 
     populate_topics()
-    print "_topics_ready_for_scatter_"
+    print("_topics_ready_for_scatter_")
 
     compute_topics()
-    print "_topics_"
+    print("_topics_")
 
     populate_analytics()
-    print "_analytics_"
+    print("_analytics_")
     ed = datetime.now()
-    print "_done_"
+    print("_done_")
 
-    print ed - dt
+    print(ed - dt)
 if __name__ == '__main__':
     main()

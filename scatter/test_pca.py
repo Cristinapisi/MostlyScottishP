@@ -30,7 +30,7 @@ class pcaTest(unittest.TestCase):
          returned_votes = cr.fetchall()
          output = run_pca(returned_votes)
          L = []
-         print output
+         print(output)
 
          self.assertTrue(output)
 
@@ -57,7 +57,7 @@ class pcaTest(unittest.TestCase):
          returned_votes = cr.fetchall()
          output = run_pca(returned_votes)
          L = []
-         print output
+         print(output)
 
          self.assertTrue(output == 'asd')
 
@@ -90,8 +90,8 @@ class pcaTest(unittest.TestCase):
 
          length = len(output)
          output_count =  returned_count[0]
-         print str(length) + str(output_count)
-         print 'testIO Passes'
+         print(str(length) + str(output_count))
+         print('testIO Passes')
         # self.assertTrue(length == output_count)
 
 
@@ -119,8 +119,8 @@ class pcaTest(unittest.TestCase):
          output = run_pca(returned_votes)
          L = []
 
-         print str(type(output)) + '==' +  str(type(L))
-         print 'testType Passes'
+         print(str(type(output)) + '==' +  str(type(L)))
+         print('testType Passes')
          #self.assertTrue(type(output) == type(L))
 
 if __name__ == '__main__':

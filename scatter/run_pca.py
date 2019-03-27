@@ -35,11 +35,11 @@ def run_pca(votes):
             if not msp_entry in msp_list:
                 msp_list += [msp_entry]
     else:
-        print "ERROR: Your database misses important data"
+        print("ERROR: Your database misses important data")
         if not len_msps:
-            print " - you do not have msps"
+            print(" - you do not have msps")
         if not len_divisions:
-            print " - you do not have divisions"
+            print(" - you do not have divisions")
 
     #Deletes every all-zero row in the input matrix (this is necessary for the filters to work correctly)
     matrix = matrix[~numpy.all(matrix == 0, axis=1)]

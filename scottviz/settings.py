@@ -16,7 +16,7 @@ ADMINS = (
 )
 # Setup some dynamic paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-print BASE_DIR
+print(BASE_DIR)
 PROJECT_PATH = os.path.abspath(os.path.join(BASE_DIR, os.pardir))
 TEMPLATE_PATH = os.path.join(BASE_DIR, '../msp/templates')
 STATIC_PATH = os.path.join(BASE_DIR, 'static')

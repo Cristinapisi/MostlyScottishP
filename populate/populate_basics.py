@@ -76,7 +76,7 @@ def populate_former_msps():
     Takes static data from data.py (unfortunately, nowhere to find this data up-to-date consistently)
     :return: Populates the MSP table with instances of MSPs that are not in the Parliament at this time
     """
-    print "in former msp"
+    print("in former msp")
     for (constituency,party,msp) in former_or_new_msps:
         m = msp
         m.constituency = Constituency.objects.get(name=constituency)
@@ -122,24 +122,24 @@ def msp_jobs():
 def main():
     delete_data()
     populate_constituency()
-    print "_constituency_"
+    print("_constituency_")
     populate_current_msps()
-    print "_current_msps_and_parties"
+    print("_current_msps_and_parties")
     populate_former_msps()
-    print "_former_msps_"
+    print("_former_msps_")
     update_new_msps()
-    print "_new_msps_"
+    print("_new_msps_")
     msp_photos()
-    print "_photos_for_all_msps_"
+    print("_photos_for_all_msps_")
     msp_jobs()
-    print "_all_jobs_"
+    print("_all_jobs_")
     # reads new scraped data; can be run to overwrite from populate_divisions
     populate_divisions_from(divisions_location, startdate, enddate)
-    print "_read_divisions_and_votes_"
+    print("_read_divisions_and_votes_")
     # updates analytics; can be run to overwrite only for some from uptadedb
     updatedb.main()
-    print "_analytics_done_"
-    print "_done_"
+    print("_analytics_done_")
+    print("_done_")
 
 if __name__ == '__main__':
     main()

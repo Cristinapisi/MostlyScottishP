@@ -13,7 +13,7 @@ class Command(NoArgsCommand):
 
     def handle_noargs(self, **options):
         try:
-            print Hit.objects.filter(time__gt=datetime.now() - timedelta(minutes=int(HIT_EXPIRATION))).delete()
+            print(Hit.objects.filter(time__gt=datetime.now() - timedelta(minutes=int(HIT_EXPIRATION))).delete())
         except DatabaseError:
             try:
                 transaction.rollback()

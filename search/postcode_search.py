@@ -66,10 +66,10 @@ def get_msps(postcode):
     if regions.has_key('ERROR'):
         return regions
 
-    print regions
+    print(regions)
     msps = {}
     for item in regions:
-        print regions[item][0]
+        print(regions[item][0])
         const = Constituency.objects.filter(name=regions[item][0])
         for c in const:
             msps[regions[item][0]] = MSP.objects.filter(constituency=c.id)

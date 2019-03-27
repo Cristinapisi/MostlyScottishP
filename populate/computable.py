@@ -267,10 +267,10 @@ def compute_parents_for_divisions():
             ammend_length = 1 + len(division.motionid.split('.')[-1:])
             parent = Division.objects.filter(motionid__exact=division.motionid[:-ammend_length])
             if len(parent) > 1:
-                print 'We found a duplicate entry for this motion: ' + parent[0].motionid
-                print 'More info:'
+                print('We found a duplicate entry for this motion: ' + parent[0].motionid)
+                print('More info:')
                 for p in parent:
-                    print p.motionid + ' with id ' + str(p.id) + ' on date ' + str(p.date)
+                    print(p.motionid + ' with id ' + str(p.id) + ' on date ' + str(p.date))
             else:
                 for p in parent:
                     division.parent = p
@@ -336,9 +336,9 @@ def see_diferences_with_new_topic_extractor():
             topic = extracter.get_topic_from_text(division.motiontopic)
         if (division.topic != topic) and (not division.parent):
             if topic == None:
-                print str(division.id) + ' ' + division.motionid + ' ' + division.topic + '  '
+                print(str(division.id) + ' ' + division.motionid + ' ' + division.topic + '  ')
             else:
-                print str(division.id) + ' ' + division.motionid + ' ' + division.topic + '  ' + topic
+                print(str(division.id) + ' ' + division.motionid + ' ' + division.topic + '  ' + topic)
 
 
 def populate_topics():

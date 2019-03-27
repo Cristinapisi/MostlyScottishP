@@ -81,7 +81,7 @@ def populate_votes():
             elif line[3] == '3':
                 v = models.Vote.NO
             vote = Vote.objects.get_or_create(id=id, msp=msp, division=division, vote=v)[0]
-            print vote.msp
+            print(vote.msp)
             vote.save()
 
 
