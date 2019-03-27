@@ -1,7 +1,6 @@
 # Django settings for scottviz project.
 import os
 import dj_database_url
-from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
@@ -117,7 +116,6 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.app_directories.Loader',
     #     'django.template.loaders.eggs.Loader',
 )
-TEMPLATE_CONTEXT_PROCESSORS += ('django.core.context_processors.request',)
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
