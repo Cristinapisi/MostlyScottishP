@@ -37,8 +37,8 @@ DATABASES = {
         }
     }
 }
-if os.environ.has_key('DATABASE_URL'):
-    DATABASES['default'] = dj_database_url.config()
+#if os.environ.has_key('DATABASE_URL'):
+#    DATABASES['default'] = dj_database_url.config()
     # Enable Connection Pooling
     #DATABASES['default']['ENGINE'] = 'django_postgrespool'
 
