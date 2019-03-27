@@ -7,7 +7,7 @@ dj-static==0.0.6
 gunicorn==19.1.1
 numpy==1.9.1
 pbr==0.10.2
-psycopg2==2.5.4
+psycopg2==2.7.7
 requests==2.5.0
 six==1.8.0
 static3==0.5.1
