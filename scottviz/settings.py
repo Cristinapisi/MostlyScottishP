@@ -25,11 +25,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'flowerpower',  # Or path to database file if using sqlite3.
+        'NAME': 'd7rhllsgqqg15g',  # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'scott',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',  # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'USER': 'uhwxfkiyugizef',
+        'PASSWORD': '7b4e9c6a7baba4219044ecf6936e07d930478be9926fb519c1dc5b2aa9f92747',
+        'HOST': 'ec2-54-83-61-142.compute-1.amazonaws.com',  # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '5432',  # Set to empty string for default.
         'OPTIONS': {
         'autocommit': True,
